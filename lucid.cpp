@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
-#include <time.h>
-#include <algorithm>
+#include <ctime>
 
 using namespace std;
 
@@ -18,7 +17,6 @@ string fact [10] = {"foxes aren't purple",
 
 int main() {
     srand (time(0));
-    random_shuffle(fact[0], fact[10]);
     int factnum = rand() % 10;
     cout << "Did you know..." << endl << fact[factnum] << endl;
     return 0;
